@@ -1,0 +1,2 @@
+C:\Users\rafaj\Desktop\SQLConnector\SQLConnector\obj\Debug\SQLConnector.csproj.AssemblyReference.cache
+C:\Users\rafaj\Desktop\SQLConnector\SQLConnector\obj\Debug\SQLConnector.csproj.CoreCompileInputs.cache
