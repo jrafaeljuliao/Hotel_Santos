@@ -38,10 +38,10 @@ namespace Hotel
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonDashboard = new System.Windows.Forms.Button();
-            this.buttonReservas = new System.Windows.Forms.Button();
             this.buttonClient = new System.Windows.Forms.Button();
             this.buttonQuartos = new System.Windows.Forms.Button();
+            this.buttonReservas = new System.Windows.Forms.Button();
+            this.buttonDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -53,11 +53,11 @@ namespace Hotel
             this.labelUsername = new System.Windows.Forms.Label();
             this.Welcome = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlRoom1 = new Hotel.User_Control.UserControlRoom();
             this.userControlClient1 = new Hotel.User_Control.UserControlClient();
             this.userControlSetting1 = new Hotel.User_Control.UserControlSetting();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -155,44 +155,6 @@ namespace Hotel
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // buttonDashboard
-            // 
-            this.buttonDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDashboard.FlatAppearance.BorderSize = 0;
-            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
-            this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
-            this.buttonDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonDashboard.Location = new System.Drawing.Point(41, 460);
-            this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Size = new System.Drawing.Size(190, 44);
-            this.buttonDashboard.TabIndex = 1;
-            this.buttonDashboard.Text = "    Dashboard";
-            this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonDashboard.UseVisualStyleBackColor = true;
-            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
-            // 
-            // buttonReservas
-            // 
-            this.buttonReservas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonReservas.FlatAppearance.BorderSize = 0;
-            this.buttonReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReservas.ForeColor = System.Drawing.Color.White;
-            this.buttonReservas.Image = ((System.Drawing.Image)(resources.GetObject("buttonReservas.Image")));
-            this.buttonReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonReservas.Location = new System.Drawing.Point(41, 394);
-            this.buttonReservas.Name = "buttonReservas";
-            this.buttonReservas.Size = new System.Drawing.Size(190, 44);
-            this.buttonReservas.TabIndex = 4;
-            this.buttonReservas.Text = "    Reservas";
-            this.buttonReservas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonReservas.UseVisualStyleBackColor = true;
-            this.buttonReservas.Click += new System.EventHandler(this.buttonReservas_Click);
-            // 
             // buttonClient
             // 
             this.buttonClient.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -230,6 +192,44 @@ namespace Hotel
             this.buttonQuartos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonQuartos.UseVisualStyleBackColor = true;
             this.buttonQuartos.Click += new System.EventHandler(this.buttonQuartos_Click);
+            // 
+            // buttonReservas
+            // 
+            this.buttonReservas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonReservas.FlatAppearance.BorderSize = 0;
+            this.buttonReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReservas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReservas.ForeColor = System.Drawing.Color.White;
+            this.buttonReservas.Image = ((System.Drawing.Image)(resources.GetObject("buttonReservas.Image")));
+            this.buttonReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReservas.Location = new System.Drawing.Point(41, 394);
+            this.buttonReservas.Name = "buttonReservas";
+            this.buttonReservas.Size = new System.Drawing.Size(190, 44);
+            this.buttonReservas.TabIndex = 4;
+            this.buttonReservas.Text = "    Reservas";
+            this.buttonReservas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonReservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonReservas.UseVisualStyleBackColor = true;
+            this.buttonReservas.Click += new System.EventHandler(this.buttonReservas_Click);
+            // 
+            // buttonDashboard
+            // 
+            this.buttonDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDashboard.FlatAppearance.BorderSize = 0;
+            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.ForeColor = System.Drawing.Color.White;
+            this.buttonDashboard.Image = ((System.Drawing.Image)(resources.GetObject("buttonDashboard.Image")));
+            this.buttonDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDashboard.Location = new System.Drawing.Point(41, 460);
+            this.buttonDashboard.Name = "buttonDashboard";
+            this.buttonDashboard.Size = new System.Drawing.Size(190, 44);
+            this.buttonDashboard.TabIndex = 1;
+            this.buttonDashboard.Text = "    Dashboard";
+            this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // panel2
             // 
@@ -332,6 +332,7 @@ namespace Hotel
             this.labelUsername.Size = new System.Drawing.Size(19, 20);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "?";
+            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
             // 
             // Welcome
             // 
@@ -355,10 +356,6 @@ namespace Hotel
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1102, 491);
             this.panel6.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // userControlRoom1
             // 
@@ -408,6 +405,10 @@ namespace Hotel
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormDashboard
             // 

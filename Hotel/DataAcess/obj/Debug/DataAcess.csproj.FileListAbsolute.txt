@@ -1,0 +1,6 @@
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\bin\Debug\DataAcess.dll
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\bin\Debug\DataAcess.pdb
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\obj\Debug\DataAcess.csproj.AssemblyReference.cache
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\obj\Debug\DataAcess.csproj.CoreCompileInputs.cache
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\obj\Debug\DataAcess.dll
+C:\Users\rafaj\OneDrive\Estudos\Development\C#\HotelSantos\Hotel_Santos\Hotel\DataAcess\obj\Debug\DataAcess.pdb

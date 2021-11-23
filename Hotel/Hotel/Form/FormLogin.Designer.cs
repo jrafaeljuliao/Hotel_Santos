@@ -37,6 +37,7 @@ namespace Hotel
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblErrorMessage = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -105,6 +106,7 @@ namespace Hotel
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Controls.Add(this.lblErrorMessage);
             this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -123,6 +125,19 @@ namespace Hotel
             this.groupBox1.Text = "Realize o Login:";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.Crimson;
+            this.lblErrorMessage.Location = new System.Drawing.Point(111, 218);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(99, 16);
+            this.lblErrorMessage.TabIndex = 5;
+            this.lblErrorMessage.Text = "Error Message";
+            this.lblErrorMessage.Visible = false;
+            this.lblErrorMessage.Click += new System.EventHandler(this.label5_Click);
+            // 
             // textBoxPassword
             // 
             this.textBoxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -140,7 +155,7 @@ namespace Hotel
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(178, 252);
+            this.label4.Location = new System.Drawing.Point(178, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 16);
             this.label4.TabIndex = 0;
@@ -166,7 +181,7 @@ namespace Hotel
             this.buttonLogIn.FlatAppearance.BorderSize = 0;
             this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogIn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.buttonLogIn.Location = new System.Drawing.Point(115, 279);
+            this.buttonLogIn.Location = new System.Drawing.Point(115, 284);
             this.buttonLogIn.Name = "buttonLogIn";
             this.buttonLogIn.Size = new System.Drawing.Size(281, 48);
             this.buttonLogIn.TabIndex = 0;
@@ -284,6 +299,7 @@ namespace Hotel
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBoxShow;
         private System.Windows.Forms.PictureBox pictureBoxHide;
+        private System.Windows.Forms.Label lblErrorMessage;
     }
 }
 

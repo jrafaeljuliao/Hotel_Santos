@@ -14,11 +14,11 @@ namespace Hotel
 {
     public partial class FormLogin : Form
     {
-        DbConnector db;
+       
         public FormLogin()
         {
             InitializeComponent();
-            db = new DbConnector();
+            
         }
 
         private void pictureBoxMinimize_MouseHover(object sender, EventArgs e)
@@ -89,23 +89,40 @@ namespace Hotel
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            bool check = db.hotel(textBoxUsername.Text.Trim(), textBoxPassword.Text.Trim());
-            if (textBoxUsername.Text.Trim() == string.Empty || textBoxPassword.Text.Trim() == string.Empty)
-                MessageBox.Show("Por favor preencha todos os campos.", "Campos Obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-            {
-                if (check)
-                {
-                    FormDashboard fd = new FormDashboard();
-                    fd.Username = textBoxUsername.Text;
-                    textBoxUsername.Clear();
-                    textBoxPassword.Clear();
-                    fd.Show();
+            if (textBoxUsername.Text != ""){
+                if (textBoxPassword.Text != "") {
+                    UserModel user = new UserModel();
+                    var validLogin = user.LoginUser(textBoxUsername.Text, textBoxPassword.Text);
+                    if(validLogin == true)
+                    {
+                        FormDashboard mainMenu = new FormDashboard();
+                        mainMenu.Show();
+                        mainMenu.FormClosed += Logout;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Usuário ou senha incorretos. \n   Por favor tente novamente.");
+                        
+                    }
                 }
-                else
-                    MessageBox.Show("Usuário ou senha inválidos.", "Usuário ou senha inválidos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+                else msgError("Por favor digite a senha.");
             }
+            else msgError("Por favor digite o usuário.");
+        }
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = "    " + msg;
+            lblErrorMessage.Visible = true;
+        }
+
+        private void Logout(object sender, FormClosedEventArgs e)
+        {
+            textBoxUsername.Text = "";
+            textBoxPassword.Text = "";
+            lblErrorMessage.Visible = false;
+                    this.Show();
+
         }
 
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
@@ -114,6 +131,11 @@ namespace Hotel
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

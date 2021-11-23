@@ -25,13 +25,11 @@ namespace Hotel
         }
         private void linkLabelLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
-            DialogResult result = MessageBox.Show("Você deseja realmente Sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(DialogResult.Yes == result)
-            {
-                timer1.Stop();
+
+            if (MessageBox.Show("Você deseja realmente Sair?", "Sair",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 this.Close();
-            }
+            
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -93,6 +91,11 @@ namespace Hotel
         }
 
         private void userControlRoom1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
         {
 
         }
